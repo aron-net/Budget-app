@@ -1,9 +1,9 @@
 <h1>New payment</h1>
 
-<%= render "form", payment: @payment %>
+<%= render "form", payment: @payment, category: @category %>
 
 <br>
 
 <div>
-  <%= link_to "Back to payments", @payments_path %>
+  <%= link_to "< Back", category_path(@category) %>
 </div>

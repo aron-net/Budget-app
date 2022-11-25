@@ -1,6 +1,7 @@
-<%= render 'header_for_payment'%>
-<%= form_with(model: payment, url: category_payments_url(@category)) do |form| %>
-  <p>Add transaction</p>
+<%= form_with(model: [category, payment]) do |form| %>
+  <%= payment.name %>
+  <%= payment.amount %>
+ 
   <% if payment.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
@@ -13,6 +14,21 @@
     </div>
   <% end %>
 
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.text_field :amount %>
+  </div>
+  <div>
+    <%= form.label :category_id%>
+    <div class="category_select">
+      <%= form.collection_check_boxes(:category_ids, current_user.categories, :id, :name) %>
+    </div>
+  </div>
   <div>
     <%= form.submit %>
   </div>

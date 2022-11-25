@@ -5,10 +5,7 @@
 <div id="payments">
   <% @payments.each do |payment| %>
     <%= render payment %>
-    <p>
-      <%= link_to "Show this payment", payment %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New payment", new_payment_path %>
+<%= link_to "New payment", new_category_payment_path(@category) %>
