@@ -1,0 +1,29 @@
+.section {
+    height: 85.7vh;
+    position: relative;
+    background-image: url("https://www.thesundaily.my/binrepository/1_2442694_20220622085926.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(250, 243, 243);
+    background-color: rgba(59, 53, 53, 0.5);
+    padding: 2rem;
+    box-shadow: rgb(11, 12, 12) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.btn_start {
+    margin: 1rem auto;
+}
+
+.section__title {
+    font-size: 1.8rem;
+}
+
+.section__description {
+    font-size: 1.4rem;
+}

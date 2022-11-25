@@ -15,7 +15,6 @@ class PaymentsController < ApplicationController
   # GET /payments/new
   def new
     @payment = Payment.new
-    @payment.amount = "200"
   end
 
   # GET /payments/1/edit

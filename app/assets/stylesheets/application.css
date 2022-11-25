@@ -71,3 +71,27 @@
     color: #3778c2;
     margin: 0.5rem 0 0 0.5rem ;
 }
+
+.container {
+    margin: auto;
+    width: 50%;
+    background-color: rgba(240, 229, 229, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.form-container {
+    margin: auto;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 60%;
+}
+
+.action-btn {
+    margin: 5px;
+    padding: 5px;
+    width: 40%;
+}
