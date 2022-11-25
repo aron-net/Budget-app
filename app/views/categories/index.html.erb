@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
+<section>
+  <%= render "nav" %>
+  <main>
     <p>
-      <%= link_to "Show this category", category %>
+      <span>Total categories amount</span>
+      <span><%="$#{@categories.joins(:payments).sum(:amount)}"%></span>
     </p>
-  <% end %>
-</div>
-
-<%= link_to "New category", new_category_path %>
+    <% if @categories.length.positive?%>
+      <% @categories.each do |category| %>
+        <%= link_to category_path(category) do%>
+          <%= render category %>
+        <%end%>
+      <% end %>
+    <%end%>
+  </main>
+  <div>
+    <%= link_to "New category", new_category_path %>
+  </div>
+</section>

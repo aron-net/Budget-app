@@ -1,4 +1,6 @@
-<%= form_with(model: payment) do |form| %>
+<%= render 'header_for_payment'%>
+<%= form_with(model: payment, url: category_payments_url(@category)) do |form| %>
+  <p>Add transaction</p>
   <% if payment.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>

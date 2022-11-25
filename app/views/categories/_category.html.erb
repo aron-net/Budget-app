@@ -1,2 +1,5 @@
-<div id="<%= dom_id category %>">
-</div>
+<section>
+    <%=category.icon%>
+    <p><%=category.name%></p>
+    <p><%="$#{category.payments.sum(:amount)}"%></p>
+<section>

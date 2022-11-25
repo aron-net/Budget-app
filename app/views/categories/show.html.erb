@@ -1,10 +1,23 @@
-<p style="color: green"><%= notice %></p>
+<section>
+  <%= render 'show_header'%>
+  <p style="color: green"><%= notice %></p>
+  <main>
+    <p>
+      <span>Total transactions amount<span>
+      <span><%="$#{@category.payments.sum(:amount)}"%></span>
+    </p>
+    <%if @payments.length.positive?%>  
+      <% @payments.each do |payment| %>
+        <%=render partial: 'payment', locals:{payment:payment} %>
+      <%end%>
+    <%end%>
+  </main>
+  
+  <%# <%= render @category %>
 
-<%= render @category %>
+  <div>
+    <%= link_to "New transaction", new_category_payment_path(@category) %>
+    <%= link_to "Back to categories", categories_path %> 
+  </div>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-
-  <%= button_to "Destroy this category", @category, method: :delete %>
-</div>
+<section>

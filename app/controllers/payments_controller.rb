@@ -2,9 +2,9 @@ class PaymentsController < ApplicationController
   before_action :set_payment, only: %i[ show edit update destroy ]
 
   # GET /payments or /payments.json
-  def index
-    @payments = Payment.all
-  end
+  # def index
+  #   @payments = @category.payments.includes(:category)
+  # end
 
   # GET /payments/1 or /payments/1.json
   def show
@@ -13,6 +13,7 @@ class PaymentsController < ApplicationController
   # GET /payments/new
   def new
     @payment = Payment.new
+    @category = Category.find(params[:category_id])
   end
 
   # GET /payments/1/edit
@@ -22,6 +23,8 @@ class PaymentsController < ApplicationController
   # POST /payments or /payments.json
   def create
     @payment = Payment.new(payment_params)
+    @payment.user_id = current_user.id
+    @category.payments << @payment
 
     respond_to do |format|
       if @payment.save
@@ -65,6 +68,6 @@ class PaymentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def payment_params
-      params.fetch(:payment, {})
+      params.require(:payment).permit(:name, :amout)
     end
 end
