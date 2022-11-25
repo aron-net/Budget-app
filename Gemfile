@@ -9,16 +9,11 @@ gem 'rails', '~> 7.0.4'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+# Use Postgres as the database for Active Record
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
-
-# authentication
-gem 'devise'
-# authorization
-gem 'cancancan'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
@@ -32,8 +27,12 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'devise'
+
+gem 'cancancan'
+
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
+# gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -42,12 +41,7 @@ gem 'redis', '~> 4.0'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'ffi'
-gem 'tzinfo-data'
-
-# Windows passowrd add .env
-gem 'dotenv-rails'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -60,6 +54,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'
   gem 'rspec-rails'
@@ -68,11 +63,10 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'bullet'
-  gem 'letter_opener'
   gem 'web-console'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
-
+  gem 'letter_opener'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
@@ -82,6 +76,5 @@ group :test do
   gem 'capybara'
   gem 'rspec-html-matchers'
   gem 'selenium-webdriver'
-  gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
 end

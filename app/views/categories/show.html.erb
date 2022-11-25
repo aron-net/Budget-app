@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+<div>
+  <%= link_to "< Back", categories_path %>
+</div>
+<%= render @category %>
+<div class="title">
+
+  <p class="transaction_title">Transactions</p>
+  <p class="transaction_total">Total transactions amount: <%="$#{@category.payments.sum(:amount)}"%></p>
+</div>
+<div>
+  <%= render @payments %>
+</div>
+
+
+<%= link_to "New Transaction", new_category_payment_path(@category), class: "add_new" %>

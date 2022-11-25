@@ -1,0 +1,93 @@
+.title{
+    background-color: #5fb523;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #434b54;
+    margin-bottom: 0.5rem;
+    padding: 5px;
+}
+
+
+.name_icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+ 
+.add_new {
+    background-color: #3778c2;
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.delete {
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction_title{
+    font-size: 1.5rem;
+}
+
+.transaction_total {
+    right: 3rem;
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#icon_container {
+    width: 30%;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+    border: 2px solid rgb(180, 156, 156);
+  }
+
+#category-icon {
+    width: 40%;
+    padding: 20px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select{
+    width: 10%;
+    padding: 3px;
+    align-items: center;
+}
+
+.text_container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    justify-items: center;
+    font-size: 1.5em;
+    width: 70%;
+}
+
+a {
+    width: 100%;
+}

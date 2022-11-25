@@ -1,0 +1,16 @@
+<div id="<%= dom_id payment %>">
+  <p>
+    <strong>Name:</strong>
+    <%= payment.name %>
+  </p>
+
+  <p>
+    <strong>Amount:</strong>
+    <%= payment.amount %>
+  </p>
+
+  <p>
+  <%= payment.created_at.strftime("%d-%B-%Y") %>
+</p>
+
+</div>
