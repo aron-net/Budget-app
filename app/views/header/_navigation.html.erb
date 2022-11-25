@@ -1,9 +1,9 @@
 <nav class="nav_bar">
-<a href="/" class="nav_bar__logo">Budget App</a>
+<a href="/" id="nav_bar__logo">Budget App</a>
 <% if user_signed_in? %>
   <p class="welcome"> Welcome,
     <%= current_user.name %>
-    <%= link_to '✎', edit_user_registration_path, class: "nav_bar__link" %>
+  </p>  
   <ul class="nav_bar__links">
     <li>
       <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: false }, class: "nav_bar__btn" %>

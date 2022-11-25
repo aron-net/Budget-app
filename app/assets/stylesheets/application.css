@@ -21,3 +21,53 @@
     text-decoration: none;
     list-style: none;
 }
+
+.form_wrapper {
+    height: 50vh;
+    position: relative;
+}
+
+.form_container{
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  width: 60%;
+  padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.transaction_form_container {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.form_container input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.transaction_form_container .input {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+.form_submit_btn {
+    cursor: pointer;
+}
+
+.back_form_btn {
+    font-size: 1.3rem;
+    color: #3778c2;
+    margin: 0.5rem 0 0 0.5rem ;
+}
