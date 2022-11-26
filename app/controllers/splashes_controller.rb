@@ -3,10 +3,10 @@ class SplashesController < ApplicationController
 
   # GET /splashes or /splashes.json
   def index
-    # if current_user.nil?
-    #     render 'splashes/index'
-    # else
-    #     redirect_to new_user_registration_path
-    # end
+    if current_user.nil?
+        render 'splashes/index'
+    else
+        redirect_to new_user_registration_path
+    end
   end
 end
