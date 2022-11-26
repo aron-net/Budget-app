@@ -8,7 +8,4 @@ Rails.application.routes.draw do
   resources :categories do
     resources :payments
   end
-  # Defines the root path route ("/")
-  # root "articles#index"
-  # root to: "categories#index"
 end
