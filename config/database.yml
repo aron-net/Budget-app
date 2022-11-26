@@ -48,3 +48,7 @@ test:
   database: Budget_test
   pool: 5
   timeout: 5000
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
