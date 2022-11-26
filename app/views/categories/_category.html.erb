@@ -1,0 +1,14 @@
+
+<div class="name_icon">
+  <div class="icon_container">
+      <%= category.icon %>
+  </div>
+  <div class="text_container">
+  <p>
+    <strong>Name:</strong>
+    <%= category.name %>
+  </p>
+  <p><%="$#{category.payments.sum(:amount)}"%></p>
+  </div>
+  
+</div>

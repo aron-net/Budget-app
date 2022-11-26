@@ -47,7 +47,7 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
+- [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -57,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Budget-app] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This is a Ruby on Rails app that allows user to create, and list payements grouped by related categories that spent on.
 
-**[your_project__name]** is a...
+**[Budget-app]** is a tracking your spending is often the first step in getting your finances in order. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going and areas where you can cut back.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -72,14 +72,14 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
@@ -94,11 +94,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> what you spend money on and how much you spend, you can see exactly where your cash is going and areas where you can cut back.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Track your expenses]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://budget-app-a3.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +120,15 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to work on this project, you need to have the following dependencies installed:
+
+<ul>
+  <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  <li><a href="https://www.postgresql.org/">Postgresql</a></li>
+  <li><a href="https://nodejs.org/en/">Node.js</a></li>
+  <li><a href="https://yarnpkg.com/">yarn</a></li>
+  <li><a href="https://rubyonrails.org/">Rails</a></li>
+</ul>
 
 <!--
 Example command:
@@ -136,36 +142,59 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:aron-helu/Budget-app.git
+  cd Budget-app
 ```
---->
 
-### Install
 
-Install this project with:
+### Commands to run
 
-<!--
-Example command:
+To get all the gems required for the project:
 
-```sh
-  cd my-project
-  gem install
+
 ```
---->
+  bundle install
+```
+
+To install packages such as style linters:
+
+
+```
+  npm install
+```
+
+To check linters locally, use:
+
+```
+rubocop
+
+npx stylelint "**/*.{css,scss}"
+
+```
+
+Once you have the project correctly set up, run:
+
+To run all migrations, create the database for testing and for development, and insert some data into the database for you to visualize the changes:
+```
+bin/rails db:setup
+```
+
+Finally, each time you make changes to the project, run
+
+In the root folder to check the consistency of the app. Please don't make changes to the tests unless completely necessary, and mention it in your PR description:
+
+```
+bundle exec rspec /spec
+```
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
-```sh
+```
   rails server
 ```
 --->
@@ -174,45 +203,26 @@ Example command:
 
 To run tests, run the following command:
 
-<!--
-Example command:
 
 ```sh
   bin/rails test test/models/article_test.rb
 ```
---->
 
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="Aron Abraham"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Aro Abraham**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-  GitHub: [@Aaron](https://github.com/aron-helu)
+- LinkedIn: [@Aaron](https://www.linkedin.com/in/aron-abraham-90a4321b0/) 
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,6 +265,14 @@ If you like this project...
 > Give credit to everyone who inspired your codebase.
 
 I would like to thank...
+
+- Original Design by: [Gregoire Vella](https://www.behance.net/gregoirevella)
+
+- Microverse
+
+- LazyCoders
+
+- Coding Partners
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

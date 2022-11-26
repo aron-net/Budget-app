@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="title">Categories</h1>
+
+<div class="categories">
+  <% @categories.each do |category| %>
+    <div class="category">
+      <%= link_to category do %> 
+        <%= render category %>
+      <% end %>
+      <%= button_to "🗑", category, method: :delete, data: { confirm: "Are you sure?" }, class: "delete" %>
+    </div>
+  <% end %>
+</div>
+<%= link_to "New category ✚", new_category_path, class: "add_new" %>
