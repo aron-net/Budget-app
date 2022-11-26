@@ -6,7 +6,7 @@
   position: relative;
 }
 
-#categories {
+.categories {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -54,7 +54,7 @@
   font-size: 1.5rem;
 }
 
-#icon_container {
+.icon_container {
   width: 30%;
   font-size: 1.5em;
   text-align: center;
@@ -62,7 +62,7 @@
   border: 2px solid rgb(180, 156, 156);
 }
 
-#category-icon {
+.category-icon {
   width: 40%;
   padding: 20px;
 }

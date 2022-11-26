@@ -266,6 +266,14 @@ If you like this project...
 
 I would like to thank...
 
+- Original Design by: [Gregoire Vella](https://www.behance.net/gregoirevella)
+
+- Microverse
+
+- LazyCoders
+
+- Coding Partners
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
