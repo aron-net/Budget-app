@@ -7,6 +7,5 @@ class Ability
     can :read, :all
     can :manage, Category, user: user
     can :mange, Payment, user:
-    
   end
 end
