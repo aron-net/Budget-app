@@ -3,11 +3,12 @@ Rails.application.routes.draw do
   # resources :splashes
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :users
-  resources :splashes
+
+  resources "splashes#index"
   resources :categories do
     resources :payments
   end
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: "categories#index"
+  # root to: "categories#index"
 end
