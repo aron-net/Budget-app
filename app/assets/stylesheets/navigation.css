@@ -1,49 +1,50 @@
 .nav_bar {
-    background-color: #3778c2 ;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+  background-color: #3778c2;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 #nav_bar__logo {
-    width: 20%;
-    font-size: 1.5rem;
-    color: white;
-    font-style: oblique
+  width: 20%;
+  font-size: 1.5rem;
+  color: white;
+  font-style: oblique;
 }
 
 .nav_bar__btn {
-    background-color: #3778c2;
-    border: 0.1px solid white;
-    cursor: pointer;
-    padding: 0.3rem;
+  background-color: #3778c2;
+  border: 0.1px solid white;
+  cursor: pointer;
+  padding: 0.3rem;
 }
 
 .nav_bar__btn:hover {
-    background-color: white;
-    color: #3778c2;
-    transition: all 1s;
+  background-color: white;
+  color: #3778c2;
+  transition: all 1s;
 }
 
 .nav_bar__links {
-    display: flex;
-    justify-content: space-around;
-    gap: 2;
+  display: flex;
+  justify-content: space-around;
 }
+
 .welcome {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
+
 .nav_bar__link {
-    background-color: #3778c2;
-    color: white;
-    border: 0.1px solid white;
-    cursor: pointer;
-    padding: 0.2rem;
-    margin-right: 1rem;
+  background-color: #3778c2;
+  color: white;
+  border: 0.1px solid white;
+  cursor: pointer;
+  padding: 0.2rem;
+  margin-right: 1rem;
 }
 
 .nav_bar__link:hover {
-    background-color: white;
-    color: #3778c2;
-    transition: all 1s;
+  background-color: white;
+  color: #3778c2;
+  transition: all 1s;
 }
