@@ -1,4 +1,4 @@
-<div id="<%= dom_id payment %>">
+<div id="<%= dom_id payment %>" class="transation_wrapper">
   <p>
     <strong>Name:</strong>
     <%= payment.name %>
@@ -9,7 +9,7 @@
     <%= payment.amount %>
   </p>
 
-  <p>
+  <p class="transaction_date">
   <%= payment.created_at.strftime("%d-%B-%Y") %>
 </p>
 
