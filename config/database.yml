@@ -29,10 +29,11 @@ default: &default
 #   pool: 5
 #   timeout: 5000
 
-
+development:
   <<: *default
   database: budget_development
 
+test:
   <<: *default
   database: budget_test
 
